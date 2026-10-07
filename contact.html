@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> content </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="" method="POST">
+
+
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname"  placeholder="Enter your name"><br><br>
+
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+
+    <label for="order-id">Order ID (Numbers only):</label><br>
+    <input type="number" id="order-id" name="order_id" placeholder="Enter your order ID"><br><br>
+
+
+    <label for="order-date">Date of Purchase:</label><br>
+    <input type="date" id="order-date" name="order_date"><br><br>
+
+
+    <label for="issue-type">Reason for Contact:</label><br>
+    <select id="issue-type" name="issue_type">
+        <option value="tracking">Where is my order?</option>
+        <option value="return">Return & Refund</option>
+        <option value="payment">Payment Issue</option>
+        <option value="general">General Inquiry</option>
+    </select><br><br>
+
+
+    <p>Preferred Contact Method:</p>
+    <input type="radio" id="pref-email" name="contact_method" value="email" checked>
+    <label for="pref-email">Email</label>
+
+    <input type="radio" id="pref-phone" name="contact_method" value="phone">
+    <label for="pref-phone">Phone Call</label><br><br>
+
+
+    <p>Subscribe to deal updates for categories:</p>
+    <input type="checkbox" id="cat-electronics" name="categories" value="electronics">
+    <label for="cat-electronics">Electronics</label>
+
+    <input type="checkbox" id="cat-fashion" name="categories" value="fashion">
+    <label for="cat-fashion">Fashion</label>
+
+    <input type="checkbox" id="cat-books" name="categories" value="books">
+    <label for="cat-books">Books</label><br><br>
+<hr>
+
+    <label for="message">Describe your issue or message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="40" placeholder="Writer your feedback" required></textarea><br><br>
+    <br>
+    <input type="submit" >
+    </form>
+</body>
+
+</html>
