@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container{
+    display: flex; 
+
+}
+body {
+    margin: 0;
+    background-color: #f3f3f3;
+}

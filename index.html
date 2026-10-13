@@ -5,28 +5,89 @@
     <title> Lab1 project </title>
     <meta charset="UTF-8" />
     <meta name="discreption" content="This is an online-shop that you can find all you want to ">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-    <header class="main header">
-        <div class="logo-container">
-            <h2 class="amz  ">Amazon.com</h2>
+    <header class="navbar">
+        <div class="logo" >
+            <img src="Images/92a6688f8b4eaa0ebaa444b0e07d1012.png" alt="amazon logo"  name="amazon" >
         </div>
-    </header>
-    <nav>
+        <nav class="nav-links">
         <a href="index.html" target="_blank"> Home </a>
         <a href="about.html" target="_blank"> About us </a>
         <a href="contact.html" target="_blank"> Contact us </a>
     </nav>
-    <main>
-        <h3 class="Welcome"> Welcome to our website </h3>
-        <article>
-            <p> Wanna see the latest news ? </p>
-            <img  class = "news" src="images.jpg">  
-            <br>
-            <a href=""> Pick your order now !</a>
-        </article>
+    </header>
+    
+    <main class="hero">
+        <h1 class="Welcome"> Welcome to our website </h1>
+        <p> Wanna see the latest news ? </p>
+        <div class="button-group">
+            <button class="btn btn-primary"> Shop Now</button>
+            <button class="btn btn-outline"> Explore More </button>
+        </div>
+        <!-- قسم المنتجات لعمل Responsive Grid -->
+    <section class="products-section">
+        <h2>Featured Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>Product 1</h3>
+                <p>High quality item description goes here.</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <h3>Product 2</h3>
+                <p>High quality item description goes here.</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <h3>Product 3</h3>
+                <p>High quality item description goes here.</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المكونات المطلوبة (Form, Alert, Modal) -->
+    <section class="components-section">
+        <h2>Component Library Demo</h2>
+
+        <!-- Alert / Notification -->
+        <div class="alert alert-success" role="alert">
+            <strong>Success!</strong> Your changes have been saved successfully.
+        </div>
+
+        <!-- Form Elements -->
+        <form class="demo-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option>Electronics</option>
+                    <option>Books</option>
+                    <option>Fashion</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Form</button>
+        </form>
+
+        <!-- CSS-Only Modal Trigger & Window -->
+        <div class="modal-demo">
+            <a href="#open-modal" class="btn btn-outline">Open CSS Modal</a>
+
+            <div id="open-modal" class="modal-overlay">
+                <div class="modal-content">
+                    <h3>CSS-Only Modal</h3>
+                    <p>This modal is built entirely with CSS using target pseudo-class or anchor links without any JavaScript!</p>
+                    <a href="#" class="btn btn-primary">Close Modal</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     </main>
     <footer>
